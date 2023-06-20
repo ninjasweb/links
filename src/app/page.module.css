@@ -29,6 +29,7 @@
   overflow: hidden;
   font-weight: bold;
   transition: .3s ease-in all;
+  color: #fff;
 }
 .content .link_container .link:hover {
   color: #000;
@@ -67,6 +68,7 @@
   width: max-content;
   margin: 0 auto;
   cursor: pointer;
+  color: #fff;
 }
 .content .promo:hover {
   border-bottom: 1px solid #fff;
