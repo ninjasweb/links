@@ -3,10 +3,10 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
 }
 .header {
   width: 100%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,12 +14,16 @@
 }
 .content {
   width: 100%;
-  border: 1px solid red;
 }
 .content .link_container {
   max-width: 500px;
   margin: 0 auto;
   padding: 10px 0;
+}
+@media (max-width: 500px) {
+  .content .link_container {
+    max-width: 80%;
+  }
 }
 .content .link_container .link {
   background-color: transparent;
@@ -30,13 +34,51 @@
   border: 2px solid #fff;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+.content .link_container .link:hover {
+  color: #000
+}
+.content .link_container .link::before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.7s ease-in-out all;
+  bottom: 0;
+  transform: translateY(-30px);
+}
+.content .link_container .link:hover::before {
+  width: 800px;
+  height: 800px;
+  transform: translateY(100px);
+}
+.content .link_container .link .icon {
+  z-index: 2;
+  filter: brightness(0) invert(0);
 }
 .content .link_container .link .title {
   margin-left: 1rem;
+  z-index: 2;
+}
+.content .promo {
+  text-align: center;
+  font-size: 0.8rem;
+  border-bottom: 1px solid transparent;
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.content .promo:hover {
+  border-bottom: 1px solid #fff;
 }
 .footer {
   width: 100%;
-  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +88,6 @@
   left: 0;
 }
 .footer div {
-  border: 1px solid green;
   width: 80%;
   padding: 1rem;
 }
