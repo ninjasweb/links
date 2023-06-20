@@ -7,7 +7,7 @@ const Header = () => {
   return ( 
     <div className={styles.header}>
       <Image priority src={Logo.src} width={90} height={90} alt="Ninjasweb"/>
-      <Image src={Isologo} width={200} height={100} alt='Ninjasweb'/>
+      <Image priority src={Isologo} width={200} height={100} alt='Ninjasweb'/>
     </div>
    )
 }

@@ -15,7 +15,8 @@ export default function Home() {
             {Links.map((link, index)=>{
               return (
                 <Link target='_blank' href={link.url} key={index}>
-                  <div 
+                  <div
+                    title={link.title}
                     onMouseEnter={() => setIsHovered(index)}
                     onMouseLeave={() => setIsHovered(-1)} 
                     className={styles.link}>
