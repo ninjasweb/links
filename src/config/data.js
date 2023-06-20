@@ -17,7 +17,7 @@ export const Links = [
   },
   {
     title: 'Twitter',
-    url: 'https://twitter.com/ninjasweb',
+    url: 'https://twitter.com/ninjaswebcom',
     icon: TwitterLogo.src
   },
   {
@@ -27,7 +27,7 @@ export const Links = [
   },
   {
     title: 'Github',
-    url: 'https://wa.me/573123776619',
+    url: 'https://github.com/ninjasweb',
     icon: GithubLogo.src
   }
 ]
