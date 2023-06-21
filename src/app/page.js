@@ -38,7 +38,6 @@ export default function Home() {
                       <Image src={item.icon} width={30} height={30} alt={item.title}/>
                     </div>
                   </Link>
-                  
                 )
               })}
             </div>

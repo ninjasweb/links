@@ -9,6 +9,11 @@
 }
 .header p {
   margin-bottom: 2rem;
-  max-width: 25%;
+  max-width: 350px;
   text-align: center;
+}
+@media (max-width: 420px){
+  .header p {
+    max-width: 250px;
+  }
 }
