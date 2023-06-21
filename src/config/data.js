@@ -1,8 +1,13 @@
+//Links
 import TikTokLogo from '@/assets/logos/tiktok.svg'
 import InstagramLogo from '@/assets/logos/instagram.svg'
 import TwitterLogo from '@/assets/logos/twitter.svg'
 import WhatsappLogo from '@/assets/logos/whatsapp.svg'
 import GithubLogo from '@/assets/logos/github.svg'
+//Controls
+import MessageIcon from '@/assets/icons/message.svg'
+import AboutIcon from '@/assets/icons/about.svg'
+import SettingsIcon from '@/assets/icons/settings.svg'
 
 export const Links = [
   {
@@ -29,5 +34,23 @@ export const Links = [
     title: 'Github',
     url: 'https://github.com/ninjasweb',
     icon: GithubLogo.src
+  }
+]
+
+export const Controls = [
+  {
+    title: 'Send a Message',
+    icon: MessageIcon.src,
+    url: '/contact'
+  },
+  {
+    title: '¿Quienes somos?',
+    icon: AboutIcon.src,
+    url: '/about'
+  },
+  {
+    title: 'Terms and Conditions',
+    icon: SettingsIcon.src,
+    url: '/credits'
   }
 ]

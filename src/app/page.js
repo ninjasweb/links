@@ -2,7 +2,7 @@
 import styles from './page.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Links } from '@/config/data'
+import { Links, Controls } from '@/config/data'
 import { useState } from 'react'
 
 export default function Home() {
@@ -30,6 +30,18 @@ export default function Home() {
                 </Link>
               )
             })}
+            <div className={styles.navigation}>
+              {Controls.map((item, index)=>{
+                return(
+                  <Link href={item.url} key={index}>
+                    <div title={item.title} className={styles.item}>
+                      <Image src={item.icon} width={30} height={30} alt={item.title}/>
+                    </div>
+                  </Link>
+                  
+                )
+              })}
+            </div>
           </div>
           <p className={styles.promo}>¿Quieres crear tu propia página como esta?</p>
         </div>
